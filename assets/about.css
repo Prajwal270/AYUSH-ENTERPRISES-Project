@@ -108,7 +108,7 @@ body {
 }
 
 .hero-section {
-  background: url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200")
+  background: url("/Images/hero2.jpg")
     center/cover;
   height: 250px;
   position: relative;
