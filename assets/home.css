@@ -2630,19 +2630,6 @@ body {
     gap: 15px;
 }
 
-.newsletter-input {
-    padding: 15px 25px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0;
-    width: 350px;
-    outline: none;
-}
-
-.newsletter-input:focus {
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
-}
-
 .cta-buttons {
     display: flex;
     gap: 15px;
@@ -2867,10 +2854,6 @@ body {
     #newsletterForm {
         width: 100%;
         flex-direction: column;
-    }
-    
-    .newsletter-input {
-        width: 100%;
     }
     
     .footer-top {

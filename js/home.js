@@ -431,50 +431,6 @@ if (safetySection) {
 }
 
 // ========================================
-// NEWSLETTER FORM SUBMISSION
-// ========================================
-
-const newsletterForm = document.getElementById('newsletterForm');
-
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const emailInput = this.querySelector('.newsletter-input');
-        const email = emailInput.value;
-        const submitBtn = this.querySelector('.btn-subscribe');
-        
-        // Show loading state
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'SUBSCRIBING...';
-        submitBtn.disabled = true;
-        
-        // Simulate API call (replace with actual API endpoint)
-        setTimeout(() => {
-            // Success feedback
-            submitBtn.textContent = 'SUBSCRIBED!';
-            submitBtn.style.background = '#fff';
-            submitBtn.style.color = '#0b5720';
-            
-            // Show success message
-            console.log('Newsletter subscription:', email);
-            alert('Thank you for subscribing! You will receive our latest updates.');
-            
-            // Reset form
-            emailInput.value = '';
-            
-            // Reset button after 2 seconds
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.style.background = '';
-                submitBtn.style.color = '';
-                submitBtn.disabled = false;
-            }, 2000);
-        }, 1500);
-    });
-}
-
-// ========================================
 // CTA SECTION ANIMATIONS
 // ========================================
 
