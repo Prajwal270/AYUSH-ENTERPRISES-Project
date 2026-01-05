@@ -1,22 +1,25 @@
 /* AYUSH ENTERPRISES - JavaScript Functionality */
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle (Updated for nav-right structure)
 const menuToggle = document.getElementById('menuToggle');
+const navRight = document.getElementById('navRight');
 const navMenu = document.getElementById('navMenu');
 
-if (menuToggle) {
+if (menuToggle && navRight) {
     menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        navRight.classList.toggle('active');
     });
 
     // Close menu on link click
-    navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navMenu.classList.remove('active');
+    if (navMenu) {
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navRight.classList.remove('active');
+            });
         });
-    });
+    }
 }
 
 // Navbar scroll effect

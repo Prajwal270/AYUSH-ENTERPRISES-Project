@@ -726,28 +726,6 @@
                 }
             });
         }
-        
-        // Nav Right Mobile Menu Toggle (Updated for new structure)
-        const menuToggle = document.getElementById('menuToggle');
-        const navRight = document.getElementById('navRight');
-        const navMenu = document.getElementById('navMenu');
-        
-        if (menuToggle && navRight) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navRight.classList.toggle('active');
-            });
-            
-            // Close menu on link click
-            if (navMenu) {
-                navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        menuToggle.classList.remove('active');
-                        navRight.classList.remove('active');
-                    });
-                });
-            }
-        }
     });
     </script>
 </body>
