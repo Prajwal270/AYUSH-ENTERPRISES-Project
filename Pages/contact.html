@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Images/logo_ayush.jpg" type="image/x-icon" />
+    <title>Contact | Ayush Enterprises</title>
+    <link rel="stylesheet" href="/assets/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="main-header">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="/Images/logo_ayush.jpg" class="logo-img" alt="Logo" loading="lazy"/>
+          <h1 class="h1-logo">
+            <span>AYUSH</span> <span id="ent">ENTERPRISES</span>
+          </h1>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <header class="hero-section">
+      <div class="hero-overlay">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <nav class="breadcrumb">Home > <span>Contact</span></nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="section-padding">
+      <div class="container text-center">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>
+          Have manpower requirements or questions? Reach out to AYUSH
+          ENTERPRISES for fast and reliable industrial manpower solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding bg-light">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <h4>Phone</h4>
+            <p>+91 93705 20423</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>ayushenterprises@email.com</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-location-dot"></i>
+            <h4>Address</h4>
+            <p>
+              MIDC Industrial Area,<br />
+              Maharashtra, India
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+          
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+          
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" />
+            </div>
+          
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+          
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/9370520423" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/whatsapp.js"></script>
+  </body>
+</html>
