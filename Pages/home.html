@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AYUSH ENTERPRISES - Professional Industrial Manpower Supply">
+    <title>AYUSH ENTERPRISES | Industrial Manpower Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Hiring Popup -->
+    <div class="hiring-popup-overlay" id="hiringPopup">
+        <div class="hiring-popup">
+            <button class="popup-close" id="closePopup">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="popup-icon-wrapper">
+                <div class="popup-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+            </div>
+            
+            <div class="popup-header">
+                <h2 class="popup-title">NOW HIRING!</h2>
+                <p class="popup-subtitle">Join AYUSH ENTERPRISES Team</p>
+            </div>
+            
+            <div class="popup-content">
+                <div class="positions-grid">
+                    <div class="position-item">
+                        <i class="fas fa-check"></i>
+                        <span>Welders</span>
+                    </div>
+                    <div class="position-item">
+                        <i class="fas fa-check"></i>
+                        <span>Fabricators</span>
+                    </div>
+                    <div class="position-item">
+                        <i class="fas fa-check"></i>
+                        <span>Helpers</span>
+                    </div>
+                    <div class="position-item">
+                        <i class="fas fa-check"></i>
+                        <span>Labor</span>
+                    </div>
+                    <div class="position-item">
+                        <i class="fas fa-check"></i>
+                        <span>Sweepers</span>
+                    </div>
+                </div>
+                
+                <div class="popup-benefits">
+                    <div class="benefit-tag">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>MIDC Butibori</span>
+                    </div>
+                    <div class="benefit-tag">
+                        <i class="fas fa-wallet"></i>
+                        <span>On-time Payment</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="popup-footer">
+                <a href="#work-with-us" class="popup-btn btn-primary" id="applyNowBtn">
+                    APPLY NOW
+                </a>
+                <a href="tel:+919370520423" class="popup-btn btn-secondary">
+                    <i class="fas fa-phone-alt"></i> CALL NOW
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Transparent Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="../Images/AE.png" alt="AYUSH ENTERPRISES">
+                    <div class="brand-name">
+                        <span class="brand-line">AYUSH</span>
+                        <span class="brand-line">ENTERPRISES</span>
+                    </div>
+                </div>
+                <div class="nav-right" id="navRight">
+                    <nav class="nav-menu" id="navMenu">
+                        <ul>
+                            <li><a href="#home" class="active">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="Work.html">Our Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-actions">
+                        <a href="tel:9370520423" class="btn-call">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <button class="menu-toggle" id="menuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-slider">
+            
+            <!-- Slide 1 - Video 1 -->
+            <div class="hero-slide active">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="../Images/4480570-hd_1920_1080_30fps.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <div style="margin-bottom: 1.5rem;">
+                                <div class="decorative-line"></div>
+                                <span class="hero-label">INDUSTRIAL MANPOWER</span>
+                            </div>
+                            <h1 class="hero-heading">Your Partner in Skilled & Reliable Manpower Solutions</h1>
+                            <p class="hero-text">Expert fabrication, welding, and industrial workforce for MIDC projects</p>
+                            <div class="hero-actions">
+                                <a href="#contact" class="btn-primary">Request Manpower</a>
+                                <a href="#about" class="btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - Video 2 -->
+            <div class="hero-slide">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="../Images/8396913-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <div style="margin-bottom: 1.5rem;">
+                                <div class="decorative-line"></div>
+                                <span class="hero-label">FABRICATION EXCELLENCE</span>
+                            </div>
+                            <h1 class="hero-heading">Professional Welders & Fabricators For Your Projects</h1>
+                            <p class="hero-text">Quality craftsmanship with certified professionals and safety standards</p>
+                            <div class="hero-actions">
+                                <a href="services.html" class="btn-primary">Our Services</a>
+                                <a href="tel:9370520423" class="btn-secondary"><i class="fas fa-phone"></i> Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Image -->
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('../Images/industrial-site.jpg');"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <div style="margin-bottom: 1.5rem;">
+                                <div class="decorative-line"></div>
+                                <span class="hero-label">TRUSTED BY INDUSTRIES</span>
+                            </div>
+                            <h1 class="hero-heading">Building Trust with Quality Workforce Across MIDC</h1>
+                            <p class="hero-text">Reliable manpower solutions for construction and industrial operations</p>
+                            <div class="hero-actions">
+                                <a href="Work.html" class="btn-primary">View Projects</a>
+                                <a href="#contact" class="btn-secondary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 - Hiring -->
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('../Images/welding-work.jpg');"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <div style="margin-bottom: 1.5rem;">
+                                <div class="decorative-line"></div>
+                                <span class="hero-label">WE'RE HIRING</span>
+                            </div>
+                            <h1 class="hero-heading">Join AYUSH ENTERPRISES - Build Your Career</h1>
+                            <p class="hero-text">Regular work • On-time payment • Long-term opportunities</p>
+                            <div class="hero-actions">
+                                <a href="#recruitment" class="btn-primary">Apply Now</a>
+                                <a href="tel:9370520423" class="btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modern Transition Frame Overlay -->
+        <!-- Modern Geometric Transition Frames -->
+        <div class="transition-frame frame-slide-0">
+            <div class="geo-shape geo-triangle-1"></div>
+            <div class="geo-shape geo-rectangle-1"></div>
+            <div class="geo-shape geo-diagonal-1"></div>
+        </div>
+        
+        <div class="transition-frame frame-slide-1">
+            <div class="geo-shape geo-triangle-2"></div>
+            <div class="geo-shape geo-rectangle-2"></div>
+            <div class="geo-shape geo-diagonal-2"></div>
+        </div>
+        
+        <div class="transition-frame frame-slide-2">
+            <div class="geo-shape geo-triangle-3"></div>
+            <div class="geo-shape geo-rectangle-3"></div>
+            <div class="geo-shape geo-diagonal-3"></div>
+        </div>
+        
+        <div class="transition-frame frame-slide-3">
+            <div class="geo-shape geo-triangle-4"></div>
+            <div class="geo-shape geo-rectangle-4"></div>
+            <div class="geo-shape geo-diagonal-4"></div>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919370520423?text=Hello%20AYUSH%20ENTERPRISES" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Who We Are Section -->
+<section class="about-section">
+    <div class="corner-frame"></div> <!-- angled background frame -->
+
+    <div class="container about-container">
+        <div class="about-content">
+            <div style="margin-bottom: 1.5rem;">
+                <div class="decorative-line decorative-line-yellow"></div>
+                <span class="section-label">WHO WE ARE</span>
+            </div>
+            <h2 class="about-heading">Focused and Future Ready</h2>
+            <p>
+                The flexibility to mobilize the right people to deliver unique solutions, an unwavering focus to 
+                delivering value to your business bottom line; and the capability to leverage innovation to meet 
+                emerging challenges and keep you at the fore. This is AYUSH ENTERPRISES.
+            </p>
+            <p>
+                As a company that is 100 percent employee-owned, we collaborate and innovate to help our partners thrive. 
+                Our culture of ownership drives your success.
+            </p>
+            <p>
+                Whether you are in construction, industrial, or building projects, partnering with AYUSH ENTERPRISES means 
+                you're gaining a reliable, professional, and trusted partner with expert manpower.
+            </p>
+            <a href="about.html" class="btn-secondary">ABOUT US</a>
+        </div>
+        <div class="about-stats">
+            <div class="stat">
+                <span class="stat-number">119</span>
+                <span class="stat-label">Years in Operation</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">$11.3B+</span>
+                <span class="stat-label">Annual Construction Volume</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">#11</span>
+                <span class="stat-label">Rank in ENR's list of Top 400 Contractors</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Where We Work Section -->
+<section class="work-section">
+    <div class="container">
+        <div class="work-content">
+            <div class="work-header">
+                <div class="work-text-content">
+                    <div style="margin-bottom: 2rem;">
+                        <div class="decorative-line decorative-line-yellow"></div>
+                        <span class="section-label">WHERE WE WORK</span>
+                    </div>
+                    <h2 class="work-heading">Helping you transform communities across the globe.</h2>
+                    <p class="work-text">
+                        No matter where or what you want to build, we mobilize the right resources and experts to 
+                        drive value and realize your project goals. From coast to coast in communities across the country, 
+                        if you're ready, we're ready.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Country Tabs -->
+            <div class="countries">
+                <span class="country-tab active">Canada</span>
+                <span class="country-tab">United States</span>
+                <span class="country-tab">Caribbean</span>
+                <span class="country-tab">Australia</span>
+            </div>
+
+            <!-- Map and Stats Container -->
+            <div class="map-stats-container">
+                <!-- Map with Dots -->
+                <div class="map-container">
+                    <img src="../Images/vecteezy_doodle-freehand-drawing-of-india-map_18795385.png" alt="India Map" class="map-image">
+                    <!-- Map Dots -->
+                    <div class="map-dots">
+                        <!-- North India -->
+                        <span class="dot" style="top: 12%; left: 22%;"></span>
+                        <span class="dot" style="top: 18%; left: 28%;"></span>
+                        <span class="dot" style="top: 15%; left: 35%;"></span>
+                        
+                        <!-- Northwest -->
+                        <span class="dot" style="top: 22%; left: 15%;"></span>
+                        <span class="dot" style="top: 28%; left: 18%;"></span>
+                        
+                        <!-- Central North -->
+                        <span class="dot" style="top: 30%; left: 30%;"></span>
+                        <span class="dot" style="top: 35%; left: 38%;"></span>
+                        <span class="dot" style="top: 32%; left: 45%;"></span>
+                        
+                        <!-- West Coast -->
+                        <span class="dot" style="top: 45%; left: 20%;"></span>
+                        <span class="dot" style="top: 55%; left: 18%;"></span>
+                        <span class="dot" style="top: 65%; left: 22%;"></span>
+                        
+                        <!-- Central India -->
+                        <span class="dot" style="top: 48%; left: 35%;"></span>
+                        <span class="dot" style="top: 52%; left: 42%;"></span>
+                        
+                        <!-- East India -->
+                        <span class="dot" style="top: 40%; left: 55%;"></span>
+                        <span class="dot" style="top: 50%; left: 58%;"></span>
+                        
+                        <!-- South India -->
+                        <span class="dot" style="top: 72%; left: 32%;"></span>
+                        <span class="dot" style="top: 78%; left: 38%;"></span>
+                        <span class="dot" style="top: 85%; left: 35%;"></span>
+                        <span class="dot" style="top: 82%; left: 45%;"></span>
+                    </div>
+                </div>
+
+                <!-- Stats on Right Side -->
+                <div class="work-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Employee Owned</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1,000+</span>
+                        <span class="stat-label">Active Projects</span>
+                    </div>
+                    <button class="btn-view-offices">VIEW OUR OFFICES</button>
+                    <p class="offices-note">See the offices behind our projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What We Build Section -->
+<section class="build-section">
+    <!-- Decorative Corner Frame -->
+    <div class="build-corner-frame"></div>
+    
+    <div class="container">
+        <div class="build-content">
+            <!-- Left Side: Image -->
+            <div class="build-image-container">
+                <img src="../Images/industrial-site.jpg" alt="Construction Project" class="build-main-image">
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="build-text-content">
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="decorative-line decorative-line-yellow"></div>
+                    <span class="section-label">WHAT WE BUILD</span>
+                </div>
+                <h2 class="build-heading">We look beyond your immediate construction needs to develop comprehensive solutions for each project</h2>
+
+                <!-- Category Tabs -->
+                <div class="build-categories">
+                    <button class="category-tab active" data-category="buildings">Buildings</button>
+                    <button class="category-tab" data-category="civil">Civil</button>
+                    <button class="category-tab" data-category="industrial">Industrial</button>
+                    <button class="category-tab" data-category="special">Special Projects</button>
+                </div>
+
+                <!-- Project Showcase -->
+                <div class="project-showcase">
+                    <span class="showcase-label">PROJECT SHOWCASE</span>
+                    <h3 class="project-title">MIDC Industrial Complex</h3>
+                    <p class="project-description">
+                        MIDC Industrial Complex is a state-of-the-art facility featuring comprehensive 
+                        fabrication and welding services. With skilled workforce deployment across multiple 
+                        industrial units, we ensure quality craftsmanship and timely project completion 
+                        with safety standards.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">LOCATION</span>
+                            <span class="detail-value">MAHARASHTRA</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">MARKET</span>
+                            <span class="detail-value">INDUSTRIAL MANUFACTURING</span>
+                        </div>
+                    </div>
+                    <a href="Work.html" class="btn-read-more">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work With Us Section -->
+<section class="work-with-us-section">
+    <!-- Geometric Background Shapes -->
+    <div class="hiring-geometric-shape-1"></div>
+    <div class="hiring-geometric-shape-2"></div>
+    
+    <div class="container">
+        <div class="hiring-content">
+            <div class="hiring-header">
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="decorative-line decorative-line-yellow"></div>
+                    <span class="section-label" style="color: white;">WORK WITH US</span>
+                </div>
+                <h2 class="hiring-heading">Join Our Growing Team at MIDC Projects</h2>
+                <p class="hiring-intro">
+                    AYUSH ENTERPRISES is hiring skilled and unskilled workers. Explore positions and benefits below.
+                </p>
+            </div>
+
+            <div class="hiring-cards-container">
+                <!-- Card 1: Required Positions -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon-circle">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="card-connector"></div>
+                            <h3 class="flip-card-title">Required Positions</h3>
+                            <p class="flip-card-subtitle">We're looking for talented professionals to join our team</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="back-title">Open Positions</h3>
+                            <ul class="back-list">
+                                <li><i class="fas fa-check"></i> Welders</li>
+                                <li><i class="fas fa-check"></i> Fabricators</li>
+                                <li><i class="fas fa-check"></i> Fitters</li>
+                                <li><i class="fas fa-check"></i> Helpers</li>
+                                <li><i class="fas fa-check"></i> General Labor</li>
+                                <li><i class="fas fa-check"></i> Sweepers / Cleaning Staff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Benefits -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon-circle">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="card-connector"></div>
+                            <h3 class="flip-card-title">Benefits</h3>
+                            <p class="flip-card-subtitle">Competitive benefits package for all our employees</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="back-title">What We Offer</h3>
+                            <ul class="back-list">
+                                <li><i class="fas fa-star"></i> Regular work schedule</li>
+                                <li><i class="fas fa-star"></i> On-time payment guaranteed</li>
+                                <li><i class="fas fa-star"></i> Long-term career opportunities</li>
+                                <li><i class="fas fa-star"></i> Safe working environment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: How to Apply -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon-circle">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="card-connector"></div>
+                            <h3 class="flip-card-title">How to Apply</h3>
+                            <p class="flip-card-subtitle">Ready to join? Get in touch with us today</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="back-title">Get Started</h3>
+                            <div class="back-contact">
+                                <p><i class="fas fa-phone"></i> Call us for immediate response</p>
+                                <p><i class="fas fa-envelope"></i> Send your resume</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Visit our office</p>
+                                <a href="#contact" class="back-button">Contact Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hiring-instruction">
+                <p><i class="fas fa-info-circle"></i> Hover over the cards to see more details</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Safety Section -->
+<section class="safety-section">
+    <!-- Decorative Shape -->
+    <div class="safety-shape"></div>
+    
+    <div class="container">
+        <div class="safety-content">
+            <!-- Left Side: Image Collage -->
+            <div class="safety-image-container">
+                <div class="geometric-bg-circle"></div>
+                <div class="geometric-bg-triangle"></div>
+                <img src="../Images/welding-work.jpg" alt="Safety at Work" class="safety-image safety-image-1">
+                <img src="../Images/industrial-site.jpg" alt="Construction Site" class="safety-image safety-image-2">
+                <img src="../Images/welding-work.jpg" alt="Industrial Work" class="safety-image safety-image-3">
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="safety-text-content">
+                <h2 class="safety-heading">Safety: A Way of Life</h2>
+                <p class="safety-description">
+                    Our culture of safety is one that extends beyond the job site to ensure everyone 
+                    returns home safely every day. At AYUSH ENTERPRISES, safety isn't just a priority—it's 
+                    a core value that guides every decision we make.
+                </p>
+               
+                <p class="safety-description">
+                    Through continuous improvement and commitment to best practices, we've achieved an exemplary 
+                    safety record across all our construction projects, demonstrating that excellence in safety 
+                    leads to excellence in execution.
+                </p>
+                <a href="#safety" class="btn-learn-more">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <!-- Decorative Geometric Shapes -->
+    <div class="cta-shapes">
+        <div class="shape-triangle-1"></div>
+        <div class="shape-triangle-2"></div>
+        <div class="shape-corner"></div>
+    </div>
+    
+    <div class="container">
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2 class="cta-heading">Ready to work together?</h2>
+                <p class="cta-description">
+                    Whether you have a project in mind and you're looking for a reliable construction partner or you're 
+                    looking to take the next step in your career, we want to hear from you!
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-cta-primary">BUILD A PROJECT WITH US</a>
+                    <a href="#recruitment" class="btn-cta-secondary">BUILD A CAREER WITH US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <div class="newsletter-text">
+                <h3 class="newsletter-heading">Ready to Build Your Team with Skilled Manpower?</h3>
+                <p class="newsletter-description">
+                    Get expert fabrication, welding, and industrial workforce for your MIDC projects. 
+                    Contact AYUSH ENTERPRISES today for reliable manpower solutions.
+                </p>
+            </div>
+            <div class="newsletter-form">
+                <div class="cta-buttons">
+                    <a href="tel:9370520423" class="btn-subscribe">
+                        <i class="fas fa-phone-alt"></i> CALL NOW
+                    </a>
+                    <a href="#work-with-us" class="btn-subscribe-secondary">
+                        <i class="fas fa-briefcase"></i> APPLY FOR WORK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="footer-links">
+                <a href="#contact">Contact Us</a>
+                <a href="#ethics">Ethics/Code of Conduct</a>
+                <a href="#privacy">Privacy Policy & Trademarks</a>
+                <a href="#accessibility">Accessibility</a>
+                <a href="#resources">Tools & Resources</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/ayush_enterprises_?igsh=MWM2d282dzI5eWM3eQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ayush-dhote-b994852a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-contact-section">
+            <div class="footer-contact-grid">
+                <!-- Contact Person -->
+                <div class="contact-info-block">
+                    <h4 class="contact-heading"><i class="fas fa-user"></i> Contact Person</h4>
+                    <p class="contact-detail"><strong>Ayush Pramod Dhote</strong></p>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-info-block">
+                    <h4 class="contact-heading"><i class="fas fa-phone"></i> Phone</h4>
+                    <p class="contact-detail">
+                        <a href="tel:+919370520423">+91 9370520423</a>
+                    </p>
+                </div>
+
+                <!-- Office Address -->
+                <div class="contact-info-block address-block">
+                    <h4 class="contact-heading"><i class="fas fa-map-marker-alt"></i> Office Address</h4>
+                    <p class="contact-detail">
+                        Near Shiv Temple, Sector 3, New Town, Butibori, Nagpur – 441108
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <img src="../Images/AE.png" alt="AYUSH ENTERPRISES Logo" class="footer-logo">
+                <div class="footer-tagline">
+                    <span class="tagline-icon"></span>
+                    <span class="tagline-text">BUILDING A BETTER FUTURE, TOGETHER</span>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2026 AYUSH ENTERPRISES. &nbsp;&nbsp; All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/home.js"></script>
+    <script>
+    // Hiring Popup Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('hiringPopup');
+        const closeBtn = document.getElementById('closePopup');
+        const applyBtn = document.getElementById('applyNowBtn');
+        
+        if (popup && closeBtn && applyBtn) {
+            // Show popup after 1 second
+            setTimeout(() => {
+                popup.classList.add('active');
+            }, 1000);
+            
+            // Close popup on close button click
+            closeBtn.addEventListener('click', () => {
+                popup.classList.remove('active');
+            });
+            
+            // Close popup on overlay click
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove('active');
+                }
+            });
+            
+            // Close popup on apply button click and scroll to section
+            applyBtn.addEventListener('click', () => {
+                popup.classList.remove('active');
+            });
+            
+            // Close popup on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && popup.classList.contains('active')) {
+                    popup.classList.remove('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
