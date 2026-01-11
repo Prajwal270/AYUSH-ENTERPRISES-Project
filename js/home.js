@@ -9,6 +9,9 @@ if (menuToggle && navRight) {
     menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('active');
         navRight.classList.toggle('active');
+    // accessibility: reflect expanded state
+    const expanded = menuToggle.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', expanded);
     });
 
     // Close menu on link click
@@ -309,52 +312,65 @@ const projectData = {
     }
 };
 
-if (categoryTabs.length > 0) {
+// Category tab handling (robust with delegation fallback)
+if (categoryTabs.length > 0 && projectShowcase) {
+    // standard listener for each tab
     categoryTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            // Remove active from all tabs
-            categoryTabs.forEach(t => t.classList.remove('active'));
-            // Add active to clicked tab
-            this.classList.add('active');
-            
-            // Get category
-            const category = this.getAttribute('data-category');
-            
-            // Update project showcase with animation
-            if (projectShowcase && projectData[category]) {
-                // Fade out
-                projectShowcase.style.opacity = '0';
-                projectShowcase.style.transform = 'translateY(20px)';
-                
-                setTimeout(() => {
-                    // Update content
-                    const data = projectData[category];
-                    projectShowcase.querySelector('.project-title').textContent = data.title;
-                    projectShowcase.querySelector('.project-description').textContent = data.description;
-                    projectShowcase.querySelectorAll('.detail-value')[0].textContent = data.location;
-                    projectShowcase.querySelectorAll('.detail-value')[1].textContent = data.market;
-                    
-                    // Fade in
-                    projectShowcase.style.transition = 'all 0.5s ease';
-                    projectShowcase.style.opacity = '1';
-                    projectShowcase.style.transform = 'translateY(0)';
-                }, 300);
-            }
-        });
-        
-        // Add hover effect
+        tab.addEventListener('click', handleCategoryClick);
         tab.addEventListener('mouseenter', function() {
-            if (!this.classList.contains('active')) {
-                this.style.color = '#000';
-            }
+            if (!this.classList.contains('active')) this.style.color = '#000';
         });
-        
         tab.addEventListener('mouseleave', function() {
-            if (!this.classList.contains('active')) {
-                this.style.color = '';
-            }
+            if (!this.classList.contains('active')) this.style.color = '';
         });
     });
+} else {
+    // fallback: event delegation on container
+    const buildCategories = document.querySelector('.build-categories');
+    if (buildCategories && projectShowcase) {
+        buildCategories.addEventListener('click', function(e) {
+            const btn = e.target.closest('.category-tab');
+            if (!btn) return;
+            handleCategoryClick.call(btn, e);
+        });
+    } else {
+        console.warn('Category tabs or project showcase not found.');
+    }
+}
+
+function handleCategoryClick(e) {
+    // Remove active from all tabs
+    document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+    // Add active to clicked tab
+    this.classList.add('active');
+
+    const category = this.getAttribute('data-category');
+    if (!category) return;
+
+    const data = projectData[category];
+    if (!data) {
+        console.warn('No project data for category:', category);
+        return;
+    }
+
+    // Update showcase with animation
+    projectShowcase.style.opacity = '0';
+    projectShowcase.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+        const titleEl = projectShowcase.querySelector('.project-title');
+        const descEl = projectShowcase.querySelector('.project-description');
+        const detailEls = projectShowcase.querySelectorAll('.detail-value');
+
+        if (titleEl) titleEl.textContent = data.title;
+        if (descEl) descEl.textContent = data.description;
+        if (detailEls[0]) detailEls[0].textContent = data.location;
+        if (detailEls[1]) detailEls[1].textContent = data.market;
+
+        projectShowcase.style.transition = 'all 0.5s ease';
+        projectShowcase.style.opacity = '1';
+        projectShowcase.style.transform = 'translateY(0)';
+    }, 250);
 }
 
 // Scroll Animation for Build Section
