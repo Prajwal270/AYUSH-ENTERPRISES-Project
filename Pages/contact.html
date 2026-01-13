@@ -13,30 +13,36 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <header class="main-header">
-      <div class="container nav-container">
-        <div class="logo">
-          <img src="/Images/AE.png" class="logo-img" alt="Logo" loading="lazy"/>
-          <h1 class="h1-logo">
-            <span>AYUSH</span> <span id="ent">ENTERPRISES</span>
-          </h1>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="work.html">Our Work</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-          </ul>
-          <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+    <!-- Transparent Navigation Header -->
+    <header class="header">
+      <div class="container">
+          <div class="nav-wrapper">
+              <div class="logo">
+                  <img src="../Images/AE.png" alt="AYUSH ENTERPRISES">
+                  <div class="brand-name">
+                      <span class="brand-line">AYUSH</span>
+                      <span class="brand-line">ENTERPRISES</span>
+                  </div>
+              </div>
+              <div class="nav-right" id="navRight">
+                  <nav class="nav-menu" id="navMenu">
+                      <ul>
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="services.html">Services</a></li>
+                          <li><a href="Work.html">Our Work</a></li>
+                          <li><a href="contact.html"  class="active">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
           </div>
-        </nav>
       </div>
-    </header>
+  </header>
 
     <!-- Hero -->
     <header class="hero-section">
@@ -169,13 +175,15 @@
                   <span class="tagline-text">BUILDING A BETTER FUTURE, TOGETHER</span>
               </div>
           </div>
+          <div class="powered-by-section">
+            <span class="powered-text">Powered by</span>
+            <a href="https://www.linkedin.com/company/nexxal-solution-pvt-ltd/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="nexal-link">
+                <img src="../Images/nnnnn.png" alt="Nexal Solution Logo" class="nexal-logo-inline">
+                <span class="nexal-text">Nexal Solution</span>
+            </a>
+        </div>
           <div class="footer-copyright">
               <p>Copyright © 2026 AYUSH ENTERPRISES. &nbsp;&nbsp; All rights reserved</p>
-              <div class="built-by">
-                  <span>Built by</span>
-                  <img src="../Images/nnnnn.png" alt="Nexal Solution Logo" class="nexal-logo">
-                  <span>Nexal Solution</span>
-              </div>
           </div>
       </div>
   </div>

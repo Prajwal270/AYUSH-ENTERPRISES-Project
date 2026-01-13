@@ -525,7 +525,7 @@ body {
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background: var(--white);
+    background: var(--gold-dark);
     transition: 0.3s;
 }
 
@@ -1134,7 +1134,7 @@ body {
     .slide-arrow {
         width: 40px;
         height: 40px;
-    }
+    } 
     
     .slide-arrow.prev {
         left: 1rem;
