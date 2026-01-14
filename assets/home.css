@@ -1813,6 +1813,184 @@ body {
     }
 }
 
+/* Additional mobile tweaks for the Work With Us / hiring timeline */
+@media (max-width: 600px) {
+    .work-with-us-section {
+        padding: 40px 0;
+    }
+
+    .hiring-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .flip-card {
+        height: auto;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: relative;
+        transform: none !important;
+        height: auto;
+        padding: 20px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+        border-radius: 12px;
+    }
+
+    .card-icon-circle {
+        width: 68px;
+        height: 68px;
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .card-connector {
+        display: none;
+    }
+
+    .flip-card-title {
+        font-size: 1.25rem;
+    }
+
+    .flip-card-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hiring-instruction {
+        font-size: 0.95rem;
+        margin-top: 30px;
+    }
+
+    /* Popup / vertical benefits column adjustments */
+    .popup-benefits {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .benefit-tag {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card-icon-circle {
+        width: 56px;
+        height: 56px;
+        font-size: 1.3rem;
+    }
+
+    .hiring-heading {
+        font-size: 1.4rem;
+    }
+
+    .hiring-intro {
+        font-size: 0.98rem;
+    }
+}
+
+/* Extend stacking behavior to slightly larger screens (<= 820px) where narrow column appears */
+@media (max-width: 820px) {
+    .hiring-cards-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 22px !important;
+        align-items: stretch !important;
+    }
+
+    .flip-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .flip-card-inner {
+        transform: none !important;
+        perspective: none !important;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 24px !important;
+        display: block !important;
+    }
+
+    .card-icon-circle {
+        margin: 0 auto 14px !important;
+    }
+
+    .card-connector {
+        display: none !important;
+    }
+}
+
+/* Strong overrides to ensure flip-cards render as stacked blocks on very small screens */
+@media (max-width: 600px) {
+    .hiring-cards-container {
+        width: 100% !important;
+        max-width: 720px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .flip-card {
+        height: auto !important;
+        perspective: none !important;
+    }
+
+    .flip-card-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        transition: none !important;
+        backface-visibility: visible !important;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        backface-visibility: visible !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 20px !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+        border-radius: 12px !important;
+    }
+
+    .flip-card-front::before {
+        display: none !important;
+    }
+
+    .card-icon-circle {
+        position: relative !important;
+        margin: 0 auto 12px !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    .card-connector {
+        display: none !important;
+    }
+
+    .flip-card-back {
+        margin-top: 12px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .build-section {
         padding: 60px 0 80px 0;
